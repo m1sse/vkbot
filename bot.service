@@ -1,0 +1,15 @@
+[Unit]
+Description=VK BOT
+After=syslog.target
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/usr/local/bin/bot
+ExecStart=/usr/bin/python3 /usr/local/bin/bot/bot_main.py
+RestartSec=10
+Restart=always
+ 
+[Install]
+WantedBy=multi-user.target
