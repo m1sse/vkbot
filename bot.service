@@ -5,9 +5,9 @@ After=network.target
 [Service]
 User=root
 
-WorkingDirectory=/usr/local/bin/bot
-Environment="PYTHONPATH=/usr/local/bin/bot/"
-ExecStart=/usr/bin/python3 /usr/local/bin/bot/bot_main.py
+WorkingDirectory=/root/Documents/vkbot/bot_main.py
+Environment="PYTHONPATH=/root/Documents/vkbot/bot_main.py"
+ExecStart=/usr/bin/python3 /root/Documents/vkbot/bot_main.py
  
 [Install]
 WantedBy=multi-user.target
