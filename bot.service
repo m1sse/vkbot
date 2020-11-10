@@ -1,6 +1,5 @@
 [Unit]
 Description=VK BOT
-After=syslog.target
 After=network.target
 
 [Service]
