@@ -5,10 +5,11 @@ After=network.target
 
 [Service]
 User=ubuntu
+Group=ubuntu
+
 WorkingDirectory=/usr/local/bin/bot
+Environment="PYTHONPATH=/usr/local/bin/bot/"
 ExecStart=/usr/bin/python3 /usr/local/bin/bot/bot_main.py
-RestartSec=10
-Restart=always
  
 [Install]
 WantedBy=multi-user.target
