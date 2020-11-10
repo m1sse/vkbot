@@ -4,6 +4,7 @@ After=network.target
 
 [Service]
 User=root
+Group=root
 
 WorkingDirectory=/usr/local/bin/bot/vkbot/
 Environment="PYTHONPATH=/usr/local/bin/bot/vkbot/bot_main.py"
@@ -12,4 +13,5 @@ Restart=always
 RestartSec=15
  
 [Install]
+Type=oneshot
 WantedBy=multi-user.target
