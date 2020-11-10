@@ -3,8 +3,7 @@ Description=VK BOT
 After=network.target
 
 [Service]
-User=ubuntu
-Group=ubuntu
+User=root
 
 WorkingDirectory=/usr/local/bin/bot
 Environment="PYTHONPATH=/usr/local/bin/bot/"
