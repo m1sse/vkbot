@@ -8,6 +8,8 @@ User=root
 WorkingDirectory=/usr/local/bin/bot/vkbot/
 Environment="PYTHONPATH=/usr/local/bin/bot/vkbot/bot_main.py"
 ExecStart=/usr/bin/python3 /usr/local/bin/bot/vkbot/bot_main.py
+Restart=always
+RestartSec=15
  
 [Install]
 WantedBy=multi-user.target
