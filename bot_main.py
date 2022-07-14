@@ -3,7 +3,7 @@ import vk_api
 import json
 from vk_api.keyboard import VkKeyboard, VkKeyboardColor
 
-token = "cdf6d259ebbb5dcd3d82274b2f4621579ad1e646e6c81d28c7cc02cd15bd041f4e95f5487e983e7222f98" #Токен авторизации с сообществом
+token = "" #Токен авторизации с сообществом
 vk_session = vk_api.VkApi(token=token) #Авторизация с сообществом по токену
 
 def get_buttons(label, color, payload=''):#Создаем кнопку для клавиатуры
